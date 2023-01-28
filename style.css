@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-size: 16px;
+    margin: 0;
+    background: #003046;
+    color: #fff;
+    height: 20000px;
+}
+
+.note-box{
+    max-width: 1100px;
+    width: 95%;
+    margin: 50px auto 0;
+}
+
+.note-box h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.title-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 15px 10px;
+    margin-bottom: 5px;
+}
+.title-container input{ 
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.title-container button,.delete{ 
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #19a0fa;
+    cursor: pointer;
+}
+
+.title-container button:hover,.delete:hover{
+    background-color: #0078c8;
+}
+
+#note-text{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    resize: none;
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#output{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px 10px;
+}
+
+.output-title{
+    margin-bottom: 20px;
+}
+
+.lists{
+    background-color: #5305ff;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.delete{
+    float: right;
+    /* we used above add note btn style  */
+    padding: 5px;
+}
+
+
+@media (max-width : 768px) {
+
+    body{
+        font-size: 8px;
+    }
+    .title-container input{
+        padding: 0 10px;
+    }
+
+    .delete{
+        padding: 4px;
+        font-size: 8px;
+    }
+    .output-title{
+        margin-bottom: 5px;
+    }
+
+    .lists{
+        background-color: #5305ff;
+        padding: 4px;
+        border-radius: 5px;
+        position: relative;
+    }
+}
